@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace AppTests
 {
@@ -10,6 +11,8 @@ namespace AppTests
         {
             string s1 = "hello";
             string s2 = "world";
+
+            Console.WriteLine("This is some StdOut output!");
 
             Assert.AreNotEqual(s1, s2);
         }

@@ -15,4 +15,4 @@ build:
   publish_nuget: true
   publish_aspnet_core: true
   publish_core_console: true
-  verbosity: normal
+  verbosity: minimal
