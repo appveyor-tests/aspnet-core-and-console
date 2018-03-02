@@ -6,6 +6,8 @@
     <FileVersion>1.0.0.1</FileVersion>
     <Authors>Feodor Fitsner</Authors>
     <Company>Appveyor Systems Inc.</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
