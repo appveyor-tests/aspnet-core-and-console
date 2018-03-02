@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Authors>Feodor Fitsner</Authors>
+    <Company>Appveyor Systems Inc.</Company>
+  </PropertyGroup>
+
+</Project>
