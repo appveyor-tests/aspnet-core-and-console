@@ -15,6 +15,10 @@ namespace AppTests
             Console.WriteLine("This is some StdOut output!");
 
             Assert.AreNotEqual(s1, s2);
+
+            return;
+
+            Console.WriteLine("Warning should be generated!");
         }
     }
 }
