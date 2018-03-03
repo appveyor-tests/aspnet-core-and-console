@@ -21,12 +21,19 @@ build:
   verbosity: minimal
 
 deploy:
-- provider: FTP
-  host: waws-prod-bay-003.ftp.azurewebsites.windows.net
-  protocol: ftp
-  username: ftp-test\$ftp-test
+#- provider: FTP
+#  host: waws-prod-bay-003.ftp.azurewebsites.windows.net
+#  protocol: ftp
+#  username: ftp-test\$ftp-test
+#  password:
+#    secure: I/+uF9anRC6vIknmdRuhEQwsYhZDy4thwVVMxtwSC2N+Q4p1A9ximQEnVMBlGa8bxjifQlGqPJuU78cZNinixw==
+#  folder: /site/wwwroot
+#  application: AspNetCoreApp
+#  beta: false
+
+- provider: AzureAppServiceZipDeploy
+  website: ftp-test
+  username: ftp-test-deploy
   password:
     secure: I/+uF9anRC6vIknmdRuhEQwsYhZDy4thwVVMxtwSC2N+Q4p1A9ximQEnVMBlGa8bxjifQlGqPJuU78cZNinixw==
-  folder: /site/wwwroot
-  application: AspNetCoreApp
-  beta: false
+  artifact: AspNetCoreApp
