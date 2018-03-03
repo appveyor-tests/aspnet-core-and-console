@@ -2,6 +2,9 @@ image: ubuntu
 
 configuration: Release
 
+init:
+- appveyor version
+
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
