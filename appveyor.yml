@@ -40,3 +40,7 @@ deploy:
 
 - provider: Environment
   name: webhook-test
+
+- provider: NuGet
+  api_key:
+    secure: 9Tf+1T2tB/qiqZTkQFpNbz3jboYpvOo/ZQ4M+0xfw07jETCSaQyi26wCQT3tHodc
