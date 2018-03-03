@@ -37,3 +37,6 @@ deploy:
   password:
     secure: I/+uF9anRC6vIknmdRuhEQwsYhZDy4thwVVMxtwSC2N+Q4p1A9ximQEnVMBlGa8bxjifQlGqPJuU78cZNinixw==
   artifact: AspNetCoreApp
+
+- provider: Environment
+  name: webhook-test
