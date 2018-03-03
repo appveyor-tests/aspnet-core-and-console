@@ -17,7 +17,7 @@ namespace AspNetCoreConsole.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "A simple ASP.NET Core application to test AppVeyor on Linux";
 
             return View();
         }
