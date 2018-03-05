@@ -20,27 +20,13 @@ build:
   publish_core_console: true
   verbosity: minimal
 
-deploy:
-#- provider: FTP
-#  host: waws-prod-bay-003.ftp.azurewebsites.windows.net
-#  protocol: ftp
-#  username: ftp-test\$ftp-test
-#  password:
-#    secure: I/+uF9anRC6vIknmdRuhEQwsYhZDy4thwVVMxtwSC2N+Q4p1A9ximQEnVMBlGa8bxjifQlGqPJuU78cZNinixw==
-#  folder: /site/wwwroot
-#  application: AspNetCoreApp
-#  beta: false
-
 - provider: AzureAppServiceZipDeploy
   website: ftp-test
   username: ftp-test-deploy
   password:
-    secure: I/+uF9anRC6vIknmdRuhEQwsYhZDy4thwVVMxtwSC2N+Q4p1A9ximQEnVMBlGa8bxjifQlGqPJuU78cZNinixw==
+    secure: bKILhIyvvgz8HagjY2e7+MEu2NSdM3JWyOR98mFH+VB2N3fPevg2o+qWiYmtJc1Ik6ohyzgT5YUE+ImLFv1uIw==
   artifact: AspNetCoreApp
-
-- provider: Environment
-  name: webhook-test
 
 - provider: NuGet
   api_key:
-    secure: 9Tf+1T2tB/qiqZTkQFpNbz3jboYpvOo/ZQ4M+0xfw07jETCSaQyi26wCQT3tHodc
+    secure: mJfgQdPoMCIIFrcbWflyWiunkviI8ldxhhK3NgpNpmmmSTJBhsxylTCrB6FkM2/v
