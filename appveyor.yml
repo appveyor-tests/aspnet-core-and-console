@@ -1,4 +1,7 @@
-image: ubuntu
+#image: ubuntu
+image: Visual Studio 2026
+#image: vs2026-master-gce-us-central1
+#build_cloud: bakery-gce-us-central1
 
 configuration: Release
 
@@ -20,15 +23,15 @@ build:
   publish_core_console: true
   verbosity: minimal
 
-deploy:
+# deploy:
 
-# Deploy to Azure App Service via Zip Push deployment
-- provider: AzureAppServiceZipDeploy
-  website: ftp-test
-  username: ftp-test-deploy
-  password:
-    secure: bKILhIyvvgz8HagjY2e7+MEu2NSdM3JWyOR98mFH+VB2N3fPevg2o+qWiYmtJc1Ik6ohyzgT5YUE+ImLFv1uIw==
-  artifact: AspNetCoreApp
+# # Deploy to Azure App Service via Zip Push deployment
+# - provider: AzureAppServiceZipDeploy
+#   website: ftp-test
+#   username: ftp-test-deploy
+#   password:
+#     secure: bKILhIyvvgz8HagjY2e7+MEu2NSdM3JWyOR98mFH+VB2N3fPevg2o+qWiYmtJc1Ik6ohyzgT5YUE+ImLFv1uIw==
+#   artifact: AspNetCoreApp
 
 # Push NuGet packages to NuGet.org
 - provider: NuGet
