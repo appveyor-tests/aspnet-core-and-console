@@ -16,6 +16,9 @@ dotnet_csproj:
   assembly_version: '{version}'
   file_version: '{version}'
   informational_version: '{version}'
+  
+before_build:
+  - dotnet restore AppVeyorBuildAgentTestSolution.sln
 
 build:
   publish_nuget: true
